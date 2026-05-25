@@ -114,7 +114,7 @@ This approach enabled gradual gas concentration increase while minimizing gas ba
 
 ---
 <p align="center">
-  <img src="assets/setup.jpg" width="45%">
+  <img src="images/setup.jpeg" width="45%">
 </p>
 
 ## Experimental Workflow
