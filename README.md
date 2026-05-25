@@ -35,42 +35,72 @@ This project explores the development of a budget-friendly gas monitoring protot
 
 
 
-Experimental Design
+<h2>Experimental Design</h2>
 
+<p>
 Due to the unavailability of a sealed gas chamber with a known volume, an improvised experimental setup was developed for controlled gas testing.
+</p>
 
-Methodology
+<h3>Methodology</h3>
 
-Two balloons were used in the experiment:
+<p>Two balloons were used in the experiment:</p>
 
-Reference Balloon
+<h4>Reference Balloon</h4>
+<ul>
+  <li>Contained ambient air</li>
+  <li>Contained the MQ gas sensor (MQ-4 for methane or MQ-8 for hydrogen)</li>
+</ul>
 
-Contains:
+<h4>Source Balloon</h4>
+<ul>
+  <li>Contained the target gas (Methane / Hydrogen)</li>
+</ul>
 
-Ambient air
-MQ gas sensor (MQ-4 for methane or MQ-8 for hydrogen)
-Source Balloon
+<p>
+A <b>medical one-way valve syringe</b> was used to transfer controlled gas volumes from the source balloon into the reference balloon.
+</p>
 
-Contains:
+<p>
+This method enabled gradual gas concentration increase while minimizing gas backflow and leakage.
+</p>
 
-Target gas (Methane / Hydrogen)
+<hr>
 
-A medical one-way valve syringe was used to transfer controlled gas volumes from the source balloon into the reference balloon.
+<h2>Experimental Workflow</h2>
 
-This approach enabled gradual gas concentration increase while minimizing backflow and leakage.
+<ol>
+  <li>Preheat the gas sensor for stabilization.</li>
+  <li>Calibrate the sensor in clean ambient air.</li>
+  <li>Determine baseline resistance (<b>R<sub>o</sub></b>).</li>
+  <li>Inject a controlled volume of target gas.</li>
+  <li>Read analog output from the sensor.</li>
+  <li>Convert ADC reading into output voltage:</li>
+</ol>
 
-Experimental Workflow
-Preheat the gas sensor for stabilization.
-Calibrate the sensor in clean ambient air.
-Determine baseline resistance (Ro).
-Inject a controlled volume of target gas.
-Read analog output from the sensor.
-Convert ADC reading into output voltage.
-Calculate sensing resistance (Rs).
-Compute the resistance ratio (Rs/Ro).
-Estimate gas concentration in PPM.
-Log readings using Arduino Serial Monitor.
+<p align="center">
+  V<sub>out</sub> = ADC × (V<sub>c</sub> / 1023)
+</p>
 
+<ol start="7">
+  <li>Calculate sensing resistance:</li>
+</ol>
+
+<p align="center">
+  R<sub>s</sub> = R<sub>L</sub> × ((V<sub>c</sub> / V<sub>out</sub>) − 1)
+</p>
+
+<ol start="8">
+  <li>Compute resistance ratio (R<sub>s</sub>/R<sub>o</sub>).</li>
+  <li>Estimate gas concentration in PPM using calibration model:</li>
+</ol>
+
+<p align="center">
+  PPM = ((R<sub>s</sub>/R<sub>o</sub>) / A)<sup>1/B</sup>
+</p>
+
+<ol start="10">
+  <li>Log readings using Arduino Serial Monitor.</li>
+</ol>
 ## Quantitative Model
 
 The gas sensor output is converted into gas concentration using the following mathematical model.
