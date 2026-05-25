@@ -190,6 +190,19 @@ $$
 
 ---
 
+<p align="center">
+  <img src="images/gas_injection1" width="45%">
+</p>
+<p align="center">
+  <img src="images/gas_injection2" width="45%">
+</p>
+<p align="center">
+  <img src="images/gas_injection3" width="45%">
+</p>
+<p align="center">
+  <img src="images/image4" width="45%">
+</p>
+
 ## Results
 
 Observed behavior matched expected MQ sensor characteristics:
