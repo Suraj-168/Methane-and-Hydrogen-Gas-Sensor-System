@@ -243,3 +243,10 @@ $$
 <li>Buzzer-based alarm</li>
 <li>Cloud logging via WiFi</li>
 </ul>
+
+
+## Documentation
+
+Project presentation available here:
+
+📄 [Project Presentation](docs/Project_Presentation.pdf)
