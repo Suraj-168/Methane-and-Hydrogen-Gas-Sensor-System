@@ -20,15 +20,18 @@ Detection of combustible gases such as methane and hydrogen is critical for indu
 Commercial gas analyzers are expensive, while low-cost sensor-based solutions often suffer from calibration and environmental limitations.
 This project explores the development of a budget-friendly gas monitoring prototype using MQ sensors and microcontroller-based signal processing.
 
-Hardware Components             Component	Purpose
-Arduino Uno	                    Microcontroller
-MQ-4	                          Methane sensing
-MQ-8	                          Hydrogen sensing
-Breadboard	                    Prototyping
-Connecting wires	              Circuit connections
-Medical one-way valve syringe	  Controlled gas injection
-Latex balloons	                Improvised gas chamber
-Regulated gas source	          Methane/Hydrogen source
+| Component                     | Purpose                            |
+| ----------------------------- | ---------------------------------- |
+| Arduino Uno                   | Main microcontroller               |
+| MQ-4 Gas Sensor               | Methane detection                  |
+| MQ-8 Gas Sensor               | Hydrogen detection                 |
+| Breadboard                    | Circuit prototyping                |
+| Jumper Wires                  | Electrical connections             |
+| Medical One-Way Valve Syringe | Controlled gas injection           |
+| Latex Balloons                | Improvised gas chamber             |
+| Regulated Gas Source          | Methane / Hydrogen supply          |
+| Arduino IDE                   | Serial monitoring and data logging |
+
 
 
 Experimental Design
