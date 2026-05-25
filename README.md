@@ -149,9 +149,9 @@ Results:
 
 Observed behavior matched expected MQ sensor characteristics:
 
-Increasing methane concentration reduced sensor resistance
-Increasing hydrogen concentration reduced sensor resistance
-Log-log response approximately followed datasheet trend
+-Increasing methane concentration reduced sensor resistance
+-Increasing hydrogen concentration reduced sensor resistance
+-Log-log response approximately followed datasheet trend
 
 Example methane range observed:
 
@@ -161,12 +161,12 @@ Limitations
 
 Current prototype has several limitations:
 
-Arduino Uno uses only 10-bit ADC (1024 steps)
-Limited measurement precision
-No sealed calibration chamber
-Environmental factors (temperature/humidity) affect readings
-MQ sensors are not perfectly selective
-Gas concentration estimation depends on datasheet approximation
+-Arduino Uno uses only 10-bit ADC (1024 steps)
+-Limited measurement precision
+-No sealed calibration chamber
+-Environmental factors (temperature/humidity) affect readings
+-MQ sensors are not perfectly selective
+-Gas concentration estimation depends on datasheet approximation
 
 
 
@@ -174,10 +174,10 @@ Proposed Improvements
 
 Future enhancements include:
 
-ESP32 integration
-ADS1115 16-bit external ADC
-Closed acrylic / 3D printed test chamber
-DHT22 temperature-humidity compensation
-OLED display for standalone monitoring
-Buzzer-based leak alarm
-Cloud logging via WiFi
+-ESP32 integration
+-ADS1115 16-bit external ADC
+-Closed acrylic / 3D printed test chamber
+-DHT22 temperature-humidity compensation
+-OLED display for standalone monitoring
+-Buzzer-based leak alarm
+-Cloud logging via WiFi
