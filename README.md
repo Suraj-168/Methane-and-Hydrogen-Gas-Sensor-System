@@ -191,7 +191,7 @@ $$
 ---
 
 <p align="center">
-  <img src="images/gas_injection1" width="45%">
+  <img src="images/gas_injection" width="45%">
 </p>
 
 <p align="center">
