@@ -15,7 +15,8 @@ Real-time serial monitoring through Arduino IDE
 
 The sensor output is converted from analog voltage into estimated gas concentration (PPM) using sensor characteristic equations derived from datasheet response curves.
 
-Problem Statement
+Problem Statement:
+
 Detection of combustible gases such as methane and hydrogen is critical for industrial safety, laboratory monitoring, and leak detection systems.
 Commercial gas analyzers are expensive, while low-cost sensor-based solutions often suffer from calibration and environmental limitations.
 This project explores the development of a budget-friendly gas monitoring prototype using MQ sensors and microcontroller-based signal processing.
