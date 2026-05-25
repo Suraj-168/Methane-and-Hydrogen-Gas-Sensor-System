@@ -37,36 +37,39 @@ This project explores the development of a budget-friendly gas monitoring protot
 
 Experimental Design
 
-Due to the unavailability of a sealed gas chamber with known volume, an improvised experimental setup was developed.
+Due to the unavailability of a sealed gas chamber with a known volume, an improvised experimental setup was developed for controlled gas testing.
 
 Methodology
-Two balloons were used:
-Reference Balloon
-Contained:
-Ambient air
-Gas sensor (MQ-4 or MQ-8)
 
+Two balloons were used in the experiment:
+
+Reference Balloon
+
+Contains:
+
+Ambient air
+MQ gas sensor (MQ-4 for methane or MQ-8 for hydrogen)
 Source Balloon
-Contained:
+
+Contains:
+
 Target gas (Methane / Hydrogen)
 
 A medical one-way valve syringe was used to transfer controlled gas volumes from the source balloon into the reference balloon.
 
-This setup allowed gradual concentration increase while minimizing gas backflow.
-
+This approach enabled gradual gas concentration increase while minimizing backflow and leakage.
 
 Experimental Workflow
--Preheat sensor for stabilization
--Calibrate sensor in clean air
--Measure baseline resistance (Ro)
--Inject controlled gas volume
--Read analog sensor output
--Convert ADC reading → voltage
--Calculate sensor resistance (Rs)
--Compute Rs/Ro ratio
--Estimate gas concentration in PPM
--Log readings in serial monitor
-
+Preheat the gas sensor for stabilization.
+Calibrate the sensor in clean ambient air.
+Determine baseline resistance (Ro).
+Inject a controlled volume of target gas.
+Read analog output from the sensor.
+Convert ADC reading into output voltage.
+Calculate sensing resistance (Rs).
+Compute the resistance ratio (Rs/Ro).
+Estimate gas concentration in PPM.
+Log readings using Arduino Serial Monitor.
 
 ## Quantitative Model
 
