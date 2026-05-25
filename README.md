@@ -113,6 +113,9 @@ A <b>medical one-way valve syringe</b> was used to transfer controlled gas volum
 This approach enabled gradual gas concentration increase while minimizing gas backflow and leakage.
 
 ---
+<p align="center">
+  <img src="images/setup.jpg" width="45%">
+</p>
 
 ## Experimental Workflow
 
